@@ -1,0 +1,86 @@
+.nav{
+    background:   rgb(0, 0, 0 , 0.5);
+    backdrop-filter: blur(10px);
+    height: 5rem;
+    width: 1310px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    border-bottom: #440404 0.1px solid;
+}
+nav.active{
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+	background-color: #000000;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+.nav:hover{
+    background-color: #000000;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+	transition: all ease 0.2s;
+}
+.log{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.log span{
+    font-weight: 600;
+    color: #ac0505;
+    text-shadow: 0 0 50px #ac0505,
+    0 0 10px #ac0505,
+    0 0 30px #ac0505;
+}
+.log:hover{
+    transform: scale(1.1);
+}
+
+.nav img{
+    width: 100px;
+}
+.desktopListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.desktopListItem:hover,
+.nav.home{
+    color: #8d0202;
+    padding-bottom: 24.5px;
+    border-bottom:  3px solid  #770000 ;
+    font-weight: 600;
+    
+}
+.desktopBtn{
+    height: 3rem;
+    background: rgba(156, 0, 0, 0.705);
+    width: 10rem;
+    color: black;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    transition: 0.1s;
+}
+.desktopBtn:hover{
+    color: black;
+    background: rgb(255, 255, 255);
+    box-shadow: 
+    0 0 50px #850505,
+    0 0 100px #850505;
+    background: #850505;
+    text-shadow: 0 0 25px #850505,
+    0 0 50px #850505;
+    font-weight: 700;
+    border: none;
+    border: #770000 2px;
+}

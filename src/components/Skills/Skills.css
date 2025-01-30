@@ -1,0 +1,75 @@
+
+.skills{
+    margin-top: 200px;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.barimg{
+    width: 3rem;
+    border: none;
+    background: none;
+    object-fit: cover;
+    height: 3rem;
+    margin-right: 2rem;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 5px #850505,
+    0 0 25px #850505, 0 0 50px #850505,
+    0 0 100px #850505, 0 0 200px #850505;
+    cursor: pointer;
+}
+.title:hover{
+    color: #850505;
+}
+.desc{
+    font-weight: 400;
+    font-size: 0.9rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+.bars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+.bar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    cursor:pointer;
+}
+.bar:hover{
+    width: 96%;
+    box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+	transition: all ease 0.2s;
+}
+.bartext>p{
+     font-size: 1rem;
+     font-weight: 200;
+}
+@media screen and (max-width:720px){
+    .bartext>p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:480px){
+    .bartext>p{
+        font-size: 3vw;
+    }
+    .barimg{
+        height: 2.25rem;
+    }
+}

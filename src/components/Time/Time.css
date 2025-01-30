@@ -1,0 +1,113 @@
+.heading{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 5px #850505,
+    0 0 25px #850505, 0 0 50px #850505,
+    0 0 100px #850505, 0 0 200px #850505;
+    cursor: pointer;
+    text-align: center;
+}
+.heading:hover{
+    color: #850505;
+}
+.education{
+    margin-top: -20px;
+    padding: 100px 15px;
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+.items{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.items::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #850505;
+    left: calc(50% - 1px);
+}
+.item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.item:last-child{
+    margin-bottom: 0;
+}
+.item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.dot{
+    height: 21px;
+    width: 21px;
+    background-color: #850505;
+    box-shadow: 0 0 25px #850505,
+    0 0 50px #850505;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+.date{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+.content{
+    background-color: rgb(15, 15, 15);
+    border: 3px solid #850505;
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px #850505;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #850505;
+}
+.content h3{
+     font-size: 20px;
+     color: white;
+     margin: 0 0 10px;
+     font-weight: 500;
+}
+.content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000000,
+    0 0 30px #000000 ; 
+}
+::-webkit-scrollbar-thumb:hover{
+    transition:  0.5s ease-in-out;
+    color: rgb(59, 59, 59);
+    transform: scale(3);
+}
+::-webkit-scrollbar-track{
+    background-color: #850505;
+    width: 50px;
+    border-radius: 10px;
+}
